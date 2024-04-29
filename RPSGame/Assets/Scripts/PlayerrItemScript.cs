@@ -14,6 +14,7 @@ public class PlayerrItemScript : MonoBehaviour
 	[Header("Collision Boxes")]
 	
 	[SerializeField] GameObject rockCollision;
+	[SerializeField] GameObject scissorsCollision;
 	[SerializeField] GameObject paperPlane;
 
 	void Update()
@@ -59,9 +60,14 @@ public class PlayerrItemScript : MonoBehaviour
 				rockCollision.SetActive(true);
 				canAttack = false;
 			}
-			else if(currentItem == 1)
+			else if(currentItem == 1) // If Paper
 			{
 		        Instantiate(paperPlane, transform.position + transform.up * 1.5f, Quaternion.identity);
+			}
+			else if(currentItem == 2) // If Scissors
+			{
+				scissorsCollision.SetActive(true);
+				canAttack = false;
 			}
 		}
 
@@ -76,6 +82,7 @@ public class PlayerrItemScript : MonoBehaviour
 				canAttack = true;
 				attackCurrentTime = 0.0f;
 				rockCollision.SetActive(false);
+				scissorsCollision.SetActive(false);
 			}
 		}
 	}
