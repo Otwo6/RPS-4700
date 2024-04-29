@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7833870840301203641}
-  - component: {fileID: 6316743063485175820}
+  - component: {fileID: 4208477275251756527}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Audio
@@ -162,7 +162,7 @@ Transform:
   - {fileID: 6024169945274286700}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6316743063485175820
+--- !u!114 &4208477275251756527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,7 @@ MonoBehaviour:
   background: {fileID: 8300000, guid: 731ca80677a2e5e46a9db32086084e72, type: 3}
   footsteps: {fileID: 8300000, guid: 949fbe62ad769a7489c033a8460ec3e3, type: 3}
   jumping: {fileID: 8300000, guid: 08644aee55933714593d327fb724dafe, type: 3}
-  landing: {fileID: 8300000, guid: c0433cdfc4a8b734ea984d917d23ecd8, type: 3}
+  landing: {fileID: 0}
   Scissorattack: {fileID: 0}
   Paperattack: {fileID: 0}
   Rockattack: {fileID: 0}

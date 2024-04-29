@@ -8,6 +8,16 @@ public class AttackCollision : MonoBehaviour
 	{
 		if(col.gameObject.tag == "Enemy")
 		{
+			print("Please work");
+			Destroy(col.gameObject);
+		}
+	}
+
+	void OnCollisionEnter(Collision col)
+	{
+		if(col.gameObject.tag == "Enemy")
+		{
+			print("Please work");
 			Destroy(col.gameObject);
 		}
 	}

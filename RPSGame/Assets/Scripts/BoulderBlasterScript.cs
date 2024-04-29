@@ -6,6 +6,7 @@ public class BoulderBlasterScript : MonoBehaviour
     public GameObject projectilePrefab; // Prefab of the projectile to shoot
     public float shootInterval = 2f; // Time interval between shots
     public float rotationSpeed = 2f; // Speed of rotation towards the player
+    public float lineOfSightRadius = 10f; // Radius within which to check line of sight
 
     private float timeSinceLastShot; // Timer to track time since the last shot
 
@@ -26,22 +27,37 @@ public class BoulderBlasterScript : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
 
-        // Count time since the last shot
-        timeSinceLastShot += Time.deltaTime;
-
-        // If enough time has passed, shoot
-        if (timeSinceLastShot >= shootInterval)
+        // Check if the player is within the line of sight radius
+        if (Vector3.Distance(transform.position, player.position) <= lineOfSightRadius)
         {
-            Shoot();
-            // Reset the timer
-            timeSinceLastShot = 0f;
+            // Perform line trace to check for obstacles
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, direction, out hit, lineOfSightRadius))
+            {
+                // If the line trace hits something other than the player, don't shoot
+                if (hit.collider.gameObject != player.gameObject)
+                {
+                    return;
+                }
+            }
+
+            // Count time since the last shot
+            timeSinceLastShot += Time.deltaTime;
+
+            // If enough time has passed, shoot
+            if (timeSinceLastShot >= shootInterval)
+            {
+                Shoot();
+                // Reset the timer
+                timeSinceLastShot = 0f;
+            }
         }
     }
 
     void Shoot()
     {
         // Instantiate the projectile prefab
-        GameObject projectile = Instantiate(projectilePrefab, transform.position + transform.forward, transform.rotation);
+        GameObject projectile = Instantiate(projectilePrefab, transform.position + transform.forward * 2.0f, transform.rotation);
         // Optionally, you can set the projectile's velocity or behavior here
     }
 }
