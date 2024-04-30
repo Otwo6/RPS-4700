@@ -13,9 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool readyToJump;
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
-    
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -91,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         // when to jump
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        if (Input.GetButton("Jump") && readyToJump && grounded)
         {
             readyToJump = false;
             Jump();
