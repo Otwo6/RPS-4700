@@ -47,9 +47,31 @@ public class AttackCollision : MonoBehaviour
 	{
 		if(col.gameObject.tag == "Enemy")
 		{
-			print("Please work");
+			Debug.Log("Please work");
 			EnemyHealthScript enemyHealth = col.gameObject.GetComponent<EnemyHealthScript>();
-			if(enemyHealth != null && enemyHealth.health > 0)
+			
+			Paperling paperling = col.gameObject.GetComponent<Paperling>();
+
+			if(paperling != null)
+			{
+				if(paperling.size == 2)
+				{
+					paperling.split(paperling.mediumPaperlingPrefab, 2);
+					Destroy(col.gameObject);
+
+				}
+				else if(paperling.size == 1)
+				{
+					paperling.split(paperling.smallPaperlingPrefab, 1);
+					Destroy(col.gameObject);
+
+				}
+				else
+				{
+					Destroy(col.gameObject);
+				}
+			}
+			else if(enemyHealth != null && enemyHealth.health > 0)
 			{
 				enemyHealth.health--;
 			}

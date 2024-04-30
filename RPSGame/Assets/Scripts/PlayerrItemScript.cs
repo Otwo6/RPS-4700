@@ -66,7 +66,7 @@ public class PlayerrItemScript : MonoBehaviour
 			}
 			else if(currentItem == 1) // If Paper
 			{
-		        Instantiate(paperPlane, transform.position + transform.up * 1.5f, transform.rotation);
+				animator.Play("ToyKnightThrowPlane");
 			}
 			else if(currentItem == 2) // If Scissors
 			{
@@ -89,5 +89,10 @@ public class PlayerrItemScript : MonoBehaviour
 				scissorsCollision.SetActive(false);
 			}
 		}
+	}
+
+	public void SpawnPlane()
+	{
+		Instantiate(paperPlane, transform.position + transform.forward * 0.5f + transform.right * 0.75f, transform.rotation);
 	}
 }
