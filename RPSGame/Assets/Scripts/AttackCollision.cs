@@ -9,7 +9,15 @@ public class AttackCollision : MonoBehaviour
 		if(col.gameObject.tag == "Enemy")
 		{
 			print("Please work");
-			Destroy(col.gameObject);
+			EnemyHealthScript enemyHealth = col.gameObject.GetComponent<EnemyHealthScript>();
+			if(enemyHealth != null && enemyHealth.health > 0)
+			{
+				enemyHealth.health--;
+			}
+			else
+			{
+				Destroy(col.gameObject);
+			}
 		}
 	}
 
@@ -18,7 +26,15 @@ public class AttackCollision : MonoBehaviour
 		if(col.gameObject.tag == "Enemy")
 		{
 			print("Please work");
-			Destroy(col.gameObject);
+			EnemyHealthScript enemyHealth = col.gameObject.GetComponent<EnemyHealthScript>();
+			if(enemyHealth != null && enemyHealth.health > 0)
+			{
+				enemyHealth.health--;
+			}
+			else
+			{
+				Destroy(col.gameObject);
+			}
 		}
 	}
 }
