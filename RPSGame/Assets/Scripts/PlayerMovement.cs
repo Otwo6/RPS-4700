@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Cosmetics")]
     [SerializeField] GameObject character;
+    [SerializeField] Animator animator;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -101,6 +102,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        // set animation speed
+        animator.SetFloat("Speed", rb.velocity.magnitude);
         // face character representation towards movement of direction
         if(moveDirection != Vector3.zero)
             character.transform.forward = moveDirection;
