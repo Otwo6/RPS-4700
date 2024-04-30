@@ -11,6 +11,8 @@ public class PlayerrItemScript : MonoBehaviour
 	float attackDelayTime = 0.2f;
 	float attackCurrentTime = 0.0f;
 
+	[SerializeField] Animator animator;
+
 	[Header("Collision Boxes")]
 	
 	[SerializeField] GameObject rockCollision;
@@ -57,8 +59,10 @@ public class PlayerrItemScript : MonoBehaviour
 			if(currentItem == 0) // If Rock
 			{
 				// Do all this in an animation event whhere you can enable trigger at set time then disable at set time
-				rockCollision.SetActive(true);
-				canAttack = false;
+				/**rockCollision.SetActive(true);
+				canAttack = false;**/
+				animator.Play("ToyKnightRockSlam");
+
 			}
 			else if(currentItem == 1) // If Paper
 			{
