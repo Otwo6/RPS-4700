@@ -70,23 +70,7 @@ public class PlayerrItemScript : MonoBehaviour
 			}
 			else if(currentItem == 2) // If Scissors
 			{
-				scissorsCollision.SetActive(true);
-				canAttack = false;
-			}
-		}
-
-		if(!canAttack)
-		{
-			if(attackCurrentTime < attackDelayTime)
-			{
-				attackCurrentTime += Time.deltaTime;
-			}
-			else
-			{
-				canAttack = true;
-				attackCurrentTime = 0.0f;
-				rockCollision.SetActive(false);
-				scissorsCollision.SetActive(false);
+				animator.Play("ToyKnightChopScissors");
 			}
 		}
 	}
