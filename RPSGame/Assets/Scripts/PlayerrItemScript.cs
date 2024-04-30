@@ -62,7 +62,7 @@ public class PlayerrItemScript : MonoBehaviour
 			}
 			else if(currentItem == 1) // If Paper
 			{
-		        Instantiate(paperPlane, transform.position + transform.up * 1.5f, Quaternion.identity);
+		        Instantiate(paperPlane, transform.position + transform.up * 1.5f, transform.rotation);
 			}
 			else if(currentItem == 2) // If Scissors
 			{

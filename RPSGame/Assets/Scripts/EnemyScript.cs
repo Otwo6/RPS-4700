@@ -33,22 +33,22 @@ public class EnemyScript : MonoBehaviour
             PlayerMovement playerMove = col.gameObject.GetComponent<PlayerMovement>();
             if(playerMove != null)
             {
-                print("Ouchy");
+                    print("Ouchy");
 
-			// Launch player
-            playerMove.rb.velocity = new Vector3(playerMove.rb.velocity.x, 0f, playerMove.rb.velocity.z);
-            playerMove.rb.AddForce(playerMove.transform.up * playerMove.jumpForce, ForceMode.Impulse);
-            playerMove.rb.AddForce(transform.forward * knockback, ForceMode.Impulse);
+	    		// Launch player
+                playerMove.rb.velocity = new Vector3(playerMove.rb.velocity.x, 0f, playerMove.rb.velocity.z);
+                playerMove.rb.AddForce(playerMove.transform.up * playerMove.jumpForce, ForceMode.Impulse);
+                playerMove.rb.AddForce(transform.forward * knockback, ForceMode.Impulse);
 
-			// Damage health or kill
-			PlayerHealthScript playerHealth = col.gameObject.GetComponent<PlayerHealthScript>();
-			playerHealth.health--;
-			if(playerHealth.health <= 0)
-			{
-				print("Dead");
-			}
-            // Play the enemy hit sound effect
-            audioManager.PlaySFX(audioManager.enemyhit);
+	    		// Damage health or kill
+		    	PlayerHealthScript playerHealth = col.gameObject.GetComponent<PlayerHealthScript>();
+			    playerHealth.health--;
+    			if(playerHealth.health <= 0)
+	    		{
+		    		print("Dead");
+    			}
+                // Play the enemy hit sound effect
+                audioManager.PlaySFX(audioManager.enemyhit);
 
             }
         }

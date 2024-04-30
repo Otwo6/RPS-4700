@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool readyToJump;
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
+    
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
     [Header("Ground Check")]
@@ -30,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
     // Adjust this value to control the frequency of footstep sounds
     public float footstepInterval = 0.5f;
     private float footstepTimer;
+
+    [Header("Cosmetics")]
+    [SerializeField] GameObject character;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -97,6 +101,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        // face character representation towards movement of direction
+        if(moveDirection != Vector3.zero)
+            character.transform.forward = moveDirection;
         // on ground
         if (grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
