@@ -17,6 +17,7 @@ public class EnemyScript : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         guardingSpot = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
@@ -30,7 +31,9 @@ public class EnemyScript : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             PlayerMovement playerMove = col.gameObject.GetComponent<PlayerMovement>();
-            print("Ouchy");
+            if(playerMove != null)
+            {
+                print("Ouchy");
 
 			// Launch player
             playerMove.rb.velocity = new Vector3(playerMove.rb.velocity.x, 0f, playerMove.rb.velocity.z);
@@ -46,6 +49,8 @@ public class EnemyScript : MonoBehaviour
 			}
             // Play the enemy hit sound effect
             audioManager.PlaySFX(audioManager.enemyhit);
+
+            }
         }
     }
 }
