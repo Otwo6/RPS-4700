@@ -8,7 +8,7 @@ public class PlayerrItemScript : MonoBehaviour
 
 	public bool canAttack = true;
 
-	float attackDelayTime = 0.5f;
+	float attackDelayTime = 0.2f;
 	float attackCurrentTime = 0.0f;
 
 	[Header("Collision Boxes")]

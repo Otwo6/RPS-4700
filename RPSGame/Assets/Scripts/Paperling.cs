@@ -14,10 +14,13 @@ public class Paperling : MonoBehaviour
         {
             for(int i = 0; i < 2; i++)
             {
-                Vector3 spawnPosition = transform.position + new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f));
+                float xOffset = i == 0 ? -2f : 2f; // If i is 0, spawn to the left (-5f), else spawn to the right (5f)
+                Vector3 spawnPosition = transform.position + new Vector3(xOffset, 0f, Random.Range(-1f, 1f));
                 GameObject newPaperling = Instantiate(prefab, spawnPosition, Quaternion.identity);
+                print("spawned");
                 Paperling newPaperlingScript = newPaperling.GetComponent<Paperling>();
-                if (newPaperlingScript != null) {
+                if (newPaperlingScript != null)
+                {
                     newPaperlingScript.size = size - 1;
                 }
             }
