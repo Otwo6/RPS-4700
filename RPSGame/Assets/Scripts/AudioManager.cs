@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip AttackCollision;
     public AudioClip BoulderBlasterShoot;
     public AudioClip BoulderBlasterhit;
-    public AudioClip playerrespawn;
+    public AudioClip respawn;
     public AudioClip rocksound;
     public AudioClip scissorsound;
     public AudioClip paperplanesound;
