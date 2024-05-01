@@ -42,11 +42,7 @@ public class EnemyScript : MonoBehaviour
 
 	    		// Damage health or kill
 		    	PlayerHealthScript playerHealth = col.gameObject.GetComponent<PlayerHealthScript>();
-			    playerHealth.health--;
-    			if(playerHealth.health <= 0)
-	    		{
-		    		print("Dead");
-    			}
+			    playerHealth.loseHealth();
                 // Play the enemy hit sound effect
                 audioManager.PlaySFX(audioManager.enemyhit);
 
