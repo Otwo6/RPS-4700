@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3222857313201785405}
   - component: {fileID: 3222857313201785404}
   - component: {fileID: 3222857313201785376}
+  - component: {fileID: -1059341919931373681}
   m_Layer: 0
   m_Name: BoulderToBlast
   m_TagString: Untagged
@@ -119,3 +120,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  selfDestructDelay: 4
+--- !u!114 &-1059341919931373681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222857313201785407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4903c2c49639571e8d370b23115a4a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

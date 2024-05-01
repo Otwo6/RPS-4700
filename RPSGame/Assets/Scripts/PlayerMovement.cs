@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
         animator.SetBool("Grounded", grounded);
-        print(grounded);
         MyInput();
         SpeedControl();
         // Play landing sound when the player lands on the ground

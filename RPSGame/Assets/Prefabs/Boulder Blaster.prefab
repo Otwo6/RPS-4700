@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8998792545400588802}
   - component: {fileID: 2713135655095840611}
   - component: {fileID: 644510526408528110}
+  - component: {fileID: 246126746739174215}
   m_Layer: 0
   m_Name: Boulder Blaster
   m_TagString: Enemy
@@ -52,7 +53,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3222857313201785407, guid: 675bcfaa8becb4a4bbd4537b61211c26, type: 3}
   shootInterval: 2
   rotationSpeed: 2
-  shooting: 0
+  lineOfSightRadius: 10
 --- !u!65 &2713135655095840611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -101,6 +102,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!114 &246126746739174215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386954108025713790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ad7d71b7b33a7c4aa4c4fcbacdbfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &2761878662698241436
 GameObject:
   m_ObjectHideFlags: 0

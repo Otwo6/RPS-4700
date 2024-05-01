@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour
     public bool chasing = false;
     public GameObject player;
     AudioManager audioManager;
+	public int enemyType;
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
