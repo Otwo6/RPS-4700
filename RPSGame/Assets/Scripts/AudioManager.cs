@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Paperattack;
     public AudioClip Rockattack;
     public AudioClip enemyhit;
-    public AudioClip playerdeath;
+    public AudioClip death;
     public AudioClip AttackCollision;
     public AudioClip BoulderBlasterShoot;
     public AudioClip BoulderBlasterhit;

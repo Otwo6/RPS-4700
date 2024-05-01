@@ -1,14 +1,14 @@
 using UnityEngine;
 public class PlayerRespawn : MonoBehaviour
 {
-    AudioManager audioManager;
+   // AudioManager audioManager;
     private Vector3 spawnLocation; // Store the spawn location
-    private void Awake()
+  /*  private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         audioManager.PlaySFX(audioManager.respawn);
     }
-
+*/
     void Start()
     {
         // Set the initial spawn location to the player's starting position
