@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645233, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -918,6 +918,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: jumping
+      value: 
+      objectReference: {fileID: 8300000, guid: 107eef3e472769b45906beb6085a5454, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: landing
+      value: 
+      objectReference: {fileID: 8300000, guid: 34b40a1ae6b56b645a9fe0149d03ef42, type: 3}
     - target: {fileID: 8002399566831818422, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: m_Name
       value: PrefabMarket
