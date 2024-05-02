@@ -20,18 +20,37 @@ public class AttackCollision : MonoBehaviour
     {
         if (enemy.CompareTag("Enemy"))
         {
-            Debug.Log("Attacking enemy");
+            print("Attacking enemy");
             EnemyHealthScript enemyHealth = enemy.GetComponent<EnemyHealthScript>();
             Paperling paperling = enemy.GetComponent<Paperling>();
 
             if (paperling != null)
             {
+				print("Paperloinmg");
                 // Must be paperling
-                if (attackType == 0) // Rock attacks Paper
+                if (attackType == 2) // Scissors attacks Paper
                 {
-                    // Destroy the paperling
-                    Destroy(enemy);
+					if(paperling.size == 2)
+					{
+						paperling.split(paperling.mediumPaperlingPrefab, 2);
+						Destroy(enemy);
+
+					}
+					else if(paperling.size == 1)
+					{
+						paperling.split(paperling.smallPaperlingPrefab, 1);
+						Destroy(enemy);
+
+					}
+					else
+					{
+						Destroy(enemy);
+					}
                 }
+				else
+				{
+					print(attackType);
+				}
             }
             else if (enemyHealth != null)
             {
@@ -50,7 +69,7 @@ public class AttackCollision : MonoBehaviour
             else
             {
                 // Must be cutling
-                if (attackType == 2) // Scissors attacks Cutling
+                if (attackType == 0) // Rock attacks Cutling
                 {
                     // Destroy the cutling
                     Destroy(enemy);

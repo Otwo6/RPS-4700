@@ -8,7 +8,8 @@ public class Paperling : MonoBehaviour
     public GameObject smallPaperlingPrefab;
    
     public int size;
-    public void split(GameObject prefab, int size)
+
+public void split(GameObject prefab, int size)
 {
     if (size > 0)
     {
