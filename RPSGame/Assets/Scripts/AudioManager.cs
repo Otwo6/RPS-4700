@@ -21,15 +21,19 @@ public class AudioManager : MonoBehaviour
     public AudioClip Rockattack;
     public AudioClip enemyhit;
     public AudioClip death;
-    public AudioClip AttackCollision;
     public AudioClip BoulderBlasterShoot;
-    public AudioClip BoulderBlasterhit;
+     public AudioClip BoulderBlasterhit;
+
+    public AudioClip AttackCollision;
+     public AudioClip equip;
+
+     public AudioClip hitwall;
+      public AudioClip gameover;
+
     public AudioClip respawn;
-    public AudioClip rocksound;
-    public AudioClip scissorsound;
-    public AudioClip paperplanesound;
-    public AudioClip Attack;
-    public AudioClip equip;
+    //public AudioClip Attack;
+   
+   
 
 
 private void Start()
@@ -42,4 +46,5 @@ public void PlaySFX(AudioClip clip)
     SFXSource.PlayOneShot(clip);
 }
 }
+
 

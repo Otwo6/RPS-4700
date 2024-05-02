@@ -9,6 +9,13 @@ public class BoulderBlasterScript : MonoBehaviour
     public float lineOfSightRadius = 10f; // Radius within which to check line of sight
 
     private float timeSinceLastShot; // Timer to track time since the last shot
+    private AudioManager audioManager; // Reference to the AudioManager
+
+    void Awake()
+    {
+        // Find and assign the AudioManager
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -56,6 +63,9 @@ public class BoulderBlasterScript : MonoBehaviour
 
     void Shoot()
     {
+        // Play shoot sound effect
+        audioManager.PlaySFX(audioManager.BoulderBlasterShoot);
+
         // Instantiate the projectile prefab
         GameObject projectile = Instantiate(projectilePrefab, transform.position + transform.forward * 2.0f, transform.rotation);
         // Optionally, you can set the projectile's velocity or behavior here
