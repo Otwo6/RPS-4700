@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHealthScript : MonoBehaviour
 {
 	public int health = 3;
+	public UIScript uiScript;
 
 	public void loseHealth()
 	{
@@ -17,6 +18,7 @@ public class PlayerHealthScript : MonoBehaviour
 		else
 		{
 			health--;
+			uiScript.subtractHealth(health);
 		}
 	}
 }
