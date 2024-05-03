@@ -32,9 +32,6 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip respawn;
     //public AudioClip Attack;
-   
-   
-
 
 private void Start()
 {
