@@ -557,6 +557,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: enemyhit
       value: 
       objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
