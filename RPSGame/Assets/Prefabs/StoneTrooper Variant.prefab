@@ -89,6 +89,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ded7629e3d056a94193c635580c0cfde, type: 3}
   m_PrefabInstance: {fileID: 1231521271883075500}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6974884157563539514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: ded7629e3d056a94193c635580c0cfde, type: 3}
+  m_PrefabInstance: {fileID: 1231521271883075500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1716466221107661535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,15 +124,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1620235067532624005, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.488325
       objectReference: {fileID: 0}
     - target: {fileID: 1620235067532624005, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.620001
       objectReference: {fileID: 0}
     - target: {fileID: 1620235067532624005, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 50.8
       objectReference: {fileID: 0}
     - target: {fileID: 1620235067532624005, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -184,6 +189,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1620235067532624001, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2013055135235999410}
+    - targetCorrespondingSourceObject: {fileID: 1620235067532624001, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6606587316896000725}
   m_SourcePrefab: {fileID: 100100000, guid: a1987106c633068dd9d0153b0f9010de, type: 3}
 --- !u!4 &121078060312005210 stripped
 Transform:
@@ -208,3 +216,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+--- !u!114 &6606587316896000725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121078060312005214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d6e9ff178bc464b89f4866da9da688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 6974884157563539514}
+  rotationSpeed: 100
