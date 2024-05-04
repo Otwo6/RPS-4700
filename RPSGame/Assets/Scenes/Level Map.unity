@@ -918,6 +918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 756939212766663222, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4675195969923304462, guid: f5a8a89da1041ab469032e659847e808, type: 2}
     - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: death
       value: 
@@ -943,6 +947,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
     - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: Destroyed
+      value: 
+      objectReference: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: footsteps
       value: 
       objectReference: {fileID: 8300000, guid: 76c8dba93fed2e742a97c278b5332af5, type: 3}
@@ -950,6 +958,10 @@ PrefabInstance:
       propertyPath: Rockattack
       value: 
       objectReference: {fileID: 8300000, guid: 565223c937b44d14a9ee21ea432d5497, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 7396db37db4b6e54485067de0e62a479, type: 3}
     - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: Paperattack
       value: 
@@ -965,7 +977,11 @@ PrefabInstance:
     - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: BoulderBlasterShoot
       value: 
-      objectReference: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+      objectReference: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
+    - target: {fileID: 5966338339811171119, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6922060340996033482, guid: f5a8a89da1041ab469032e659847e808, type: 2}
     - target: {fileID: 8002399566831818422, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: m_Name
       value: PrefabMarket
