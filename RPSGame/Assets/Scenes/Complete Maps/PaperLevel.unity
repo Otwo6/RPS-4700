@@ -2365,13 +2365,13 @@ MonoBehaviour:
   Rockattack: {fileID: 8300000, guid: 565223c937b44d14a9ee21ea432d5497, type: 3}
   enemyhit: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
   death: {fileID: 8300000, guid: 272352f581588d54ab7cef5c32deae8a, type: 3}
-  BoulderBlasterShoot: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
-  BoulderBlasterhit: {fileID: 8300000, guid: 7e606db92f1abdb439975b6a55d142b8, type: 3}
-  AttackCollision: {fileID: 0}
+  BoulderBlasterShoot: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
+  Destroyed: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
   equip: {fileID: 8300000, guid: 454d206d1f65f6b4286ea752602fffb4, type: 3}
-  hitwall: {fileID: 0}
-  gameover: {fileID: 0}
   respawn: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
+  testmap: {fileID: 0}
+  quit: {fileID: 0}
+  OptionMenu: {fileID: 0}
 --- !u!1 &929292991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,6 +5341,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: Destroyed
+      value: 
+      objectReference: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: footsteps
       value: 
       objectReference: {fileID: 8300000, guid: 76c8dba93fed2e742a97c278b5332af5, type: 3}
@@ -5348,6 +5352,10 @@ PrefabInstance:
       propertyPath: Rockattack
       value: 
       objectReference: {fileID: 8300000, guid: 565223c937b44d14a9ee21ea432d5497, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 7396db37db4b6e54485067de0e62a479, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: Paperattack
       value: 
@@ -5363,7 +5371,7 @@ PrefabInstance:
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: BoulderBlasterShoot
       value: 
-      objectReference: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+      objectReference: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
     - target: {fileID: 4524946413729503274, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
