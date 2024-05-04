@@ -2356,22 +2356,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 779437062}
   SFXSource: {fileID: 218741651}
-  background: {fileID: 0}
-  footsteps: {fileID: 0}
-  jumping: {fileID: 0}
-  landing: {fileID: 0}
-  Scissorattack: {fileID: 0}
-  Paperattack: {fileID: 0}
-  Rockattack: {fileID: 0}
-  enemyhit: {fileID: 0}
-  death: {fileID: 0}
-  BoulderBlasterShoot: {fileID: 0}
-  BoulderBlasterhit: {fileID: 0}
+  background: {fileID: 8300000, guid: 7396db37db4b6e54485067de0e62a479, type: 3}
+  footsteps: {fileID: 8300000, guid: 76c8dba93fed2e742a97c278b5332af5, type: 3}
+  jumping: {fileID: 8300000, guid: 107eef3e472769b45906beb6085a5454, type: 3}
+  landing: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
+  Scissorattack: {fileID: 8300000, guid: 987dae5145ba53e429d9b91e3764d8ca, type: 3}
+  Paperattack: {fileID: 8300000, guid: 2278e1d50e01e3049aa53f72aaa12c86, type: 3}
+  Rockattack: {fileID: 8300000, guid: 565223c937b44d14a9ee21ea432d5497, type: 3}
+  enemyhit: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
+  death: {fileID: 8300000, guid: 272352f581588d54ab7cef5c32deae8a, type: 3}
+  BoulderBlasterShoot: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+  BoulderBlasterhit: {fileID: 8300000, guid: 7e606db92f1abdb439975b6a55d142b8, type: 3}
   AttackCollision: {fileID: 0}
-  equip: {fileID: 0}
+  equip: {fileID: 8300000, guid: 454d206d1f65f6b4286ea752602fffb4, type: 3}
   hitwall: {fileID: 0}
   gameover: {fileID: 0}
-  respawn: {fileID: 0}
+  respawn: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
 --- !u!1 &929292991
 GameObject:
   m_ObjectHideFlags: 0
