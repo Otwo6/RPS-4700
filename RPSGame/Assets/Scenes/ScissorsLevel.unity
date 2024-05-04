@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &14473746
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &495573750
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &535426408
@@ -5832,7 +5832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &1518275148
@@ -6041,7 +6041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &1529613594
@@ -6836,7 +6836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ee03b953eff081eb1d7f53633c0e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6595461175709880763, guid: 415d6d86cc34b804c954f4065f4bcc61, type: 3}
+  objectToSpawn: {fileID: 4564793790285567809, guid: ddc053ee2ed783b428a8afdcc02a4d5b, type: 3}
   spawnInterval: 3
   spawnCount: 5
 --- !u!4 &1885579342
