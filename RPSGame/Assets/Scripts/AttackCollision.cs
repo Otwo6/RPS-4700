@@ -5,6 +5,12 @@ using UnityEngine;
 public class AttackCollision : MonoBehaviour
 {
     [SerializeField] int attackType;    // 0 Rock 1 Paper 2 Scissors
+    private AudioManager audioManager; // Reference to the AudioManager
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void OnTriggerEnter(Collider col)
     {
@@ -26,31 +32,29 @@ public class AttackCollision : MonoBehaviour
 
             if (paperling != null)
             {
-				print("Paperloinmg");
+                print("Paperling");
                 // Must be paperling
                 if (attackType == 2) // Scissors attacks Paper
                 {
-					if(paperling.size == 2)
-					{
-						paperling.split(paperling.mediumPaperlingPrefab, 2);
-						Destroy(enemy);
-
-					}
-					else if(paperling.size == 1)
-					{
-						paperling.split(paperling.smallPaperlingPrefab, 1);
-						Destroy(enemy);
-
-					}
-					else
-					{
-						Destroy(enemy);
-					}
+                    if (paperling.size == 2)
+                    {
+                        paperling.split(paperling.mediumPaperlingPrefab, 2);
+                        DestroyEnemy(enemy);
+                    }
+                    else if (paperling.size == 1)
+                    {
+                        paperling.split(paperling.smallPaperlingPrefab, 1);
+                        DestroyEnemy(enemy);
+                    }
+                    else
+                    {
+                        DestroyEnemy(enemy);
+                    }
                 }
-				else
-				{
-					print(attackType);
-				}
+                else
+                {
+                    print(attackType);
+                }
             }
             else if (enemyHealth != null)
             {
@@ -62,7 +66,7 @@ public class AttackCollision : MonoBehaviour
                     if (enemyHealth.health <= 0)
                     {
                         // Destroy the stone enemy if its health drops to or below 0
-                        Destroy(enemy);
+                        DestroyEnemy(enemy);
                     }
                 }
             }
@@ -72,9 +76,18 @@ public class AttackCollision : MonoBehaviour
                 if (attackType == 0) // Rock attacks Cutling
                 {
                     // Destroy the cutling
-                    Destroy(enemy);
+                    DestroyEnemy(enemy);
                 }
             }
         }
+    }
+
+    void DestroyEnemy(GameObject enemy)
+    {
+        // Play destroy sound effect
+        audioManager.PlaySFX(audioManager.Destroyed);
+
+        // Destroy the enemy
+        Destroy(enemy);
     }
 }

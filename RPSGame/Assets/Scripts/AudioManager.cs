@@ -22,15 +22,13 @@ public class AudioManager : MonoBehaviour
     public AudioClip enemyhit;
     public AudioClip death;
     public AudioClip BoulderBlasterShoot;
-     public AudioClip BoulderBlasterhit;
-
-    public AudioClip AttackCollision;
-     public AudioClip equip;
-
-     public AudioClip hitwall;
-      public AudioClip gameover;
-
+     public AudioClip Destroyed;
+ public AudioClip equip;
     public AudioClip respawn;
+
+    public AudioClip testmap;
+    public AudioClip quit;
+    public AudioClip OptionMenu;
     //public AudioClip Attack;
 
 private void Start()
