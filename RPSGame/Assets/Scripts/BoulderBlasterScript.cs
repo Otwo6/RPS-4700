@@ -67,7 +67,7 @@ public class BoulderBlasterScript : MonoBehaviour
         audioManager.PlaySFX(audioManager.BoulderBlasterShoot);
 
         // Instantiate the projectile prefab
-        GameObject projectile = Instantiate(projectilePrefab, transform.position + transform.forward * 2.0f, transform.rotation);
+        GameObject projectile = Instantiate(projectilePrefab, transform.position + transform.forward * 2.5f, transform.rotation);
         // Optionally, you can set the projectile's velocity or behavior here
     }
 }
