@@ -1,10 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerHealthScript : MonoBehaviour
 {
     public int health = 3;
     internal int currentHealth;
     private AudioManager audioManager;
+    public TMP_Text UIText;
 
     private void Awake()
     {
@@ -22,6 +24,7 @@ public class PlayerHealthScript : MonoBehaviour
 
             // Play death sound effect
             audioManager.PlaySFX(audioManager.death);
+            UIText.text = health.ToString();
         }
         else
         {

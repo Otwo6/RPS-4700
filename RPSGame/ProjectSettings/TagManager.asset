@@ -8,6 +8,7 @@ TagManager:
   - Checkpoint
   - Paper Plane
   - Audio
+  - UI
   layers:
   - Default
   - TransparentFX
