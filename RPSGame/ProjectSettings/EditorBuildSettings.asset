@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: d5c616d03e81d4950854c903a517dd6f
+  - enabled: 1
+    path: Assets/Scenes/Complete Maps/PaperLevel.unity
+    guid: 5261f4d0cb53d86448f358ddd15fbd5a
+  - enabled: 1
+    path: Assets/Scenes/RockLevel.unity
+    guid: 1451823a5ff9af64fb713678b4baec42
+  - enabled: 1
+    path: Assets/Scenes/ScissorsLevel.unity
+    guid: adda00489e04495438ecf5a2dfc86a08
   m_configObjects: {}
