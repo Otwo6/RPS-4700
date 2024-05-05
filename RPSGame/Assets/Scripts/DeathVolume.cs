@@ -19,11 +19,10 @@ public class DeathVolume : MonoBehaviour
             if (playerRespawn != null)
             {
                 playerRespawn.Respawn();
+                playerHealth.loseHealth();
                 if (audioManager != null)
                 {
                   audioManager.PlaySFX(audioManager.respawn);
-					playerHealth.loseHealth();
-                  
                 }
             }
         }

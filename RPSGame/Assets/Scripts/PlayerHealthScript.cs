@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class PlayerHealthScript : MonoBehaviour
 {
@@ -7,29 +8,44 @@ public class PlayerHealthScript : MonoBehaviour
     internal int currentHealth;
     private AudioManager audioManager;
     public TMP_Text UIText;
+    private bool canLoseHealth = true;
 
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        UIText.text = health.ToString();
     }
 
     public void loseHealth()
     {
-        if (health <= 0)
+        if (canLoseHealth)
         {
-            // Player has died
-            // death screen shows prompting restart or quit
-            GameObject.FindGameObjectWithTag("Player").GetComponent<CapsuleCollider>().enabled = false;
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>().enabled = false;
+            if (health <= 0)
+            {
+                // Player has died
+                // death screen shows prompting restart or quit
+                GameObject.FindGameObjectWithTag("Player").GetComponent<CapsuleCollider>().enabled = false;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>().enabled = false;
 
-            // Play death sound effect
-            audioManager.PlaySFX(audioManager.death);
-            UIText.text = health.ToString();
+                // Play death sound effect
+                audioManager.PlaySFX(audioManager.death);
+            }
+            else
+            {
+                // Player lost health but is still alive
+                health--;
+                print("Kill");
+                UIText.text = health.ToString();
+            }
+
+            canLoseHealth = false;
+            StartCoroutine(EnableLoseHealth());
         }
-        else
-        {
-            // Player lost health but is still alive
-            health--;
-        }
+    }
+
+    IEnumerator EnableLoseHealth()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canLoseHealth = true;
     }
 }
