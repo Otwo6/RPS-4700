@@ -26,9 +26,8 @@ public class AudioManager : MonoBehaviour
  public AudioClip equip;
     public AudioClip respawn;
 
-    public AudioClip testmap;
-    public AudioClip quit;
-    public AudioClip OptionMenu;
+    public AudioClip gameover;
+   
     //public AudioClip Attack;
 
 private void Start()

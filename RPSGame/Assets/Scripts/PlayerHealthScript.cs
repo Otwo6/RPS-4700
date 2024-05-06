@@ -31,6 +31,7 @@ public class PlayerHealthScript : MonoBehaviour
                 // Play death sound effect
                 audioManager.PlaySFX(audioManager.death);
                 deathScreen.SetActive(true);
+                audioManager.PlaySFX(audioManager.gameover);
             }
             else
             {
