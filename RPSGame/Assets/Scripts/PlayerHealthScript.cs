@@ -21,7 +21,7 @@ public class PlayerHealthScript : MonoBehaviour
     {
         if (canLoseHealth)
         {
-            if (health <= 0)
+            if (health <= 1)
             {
                 // Player has died
                 // death screen shows prompting restart or quit
