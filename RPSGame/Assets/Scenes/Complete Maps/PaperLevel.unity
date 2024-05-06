@@ -2348,7 +2348,7 @@ MonoBehaviour:
   Destroyed: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
   equip: {fileID: 8300000, guid: 454d206d1f65f6b4286ea752602fffb4, type: 3}
   respawn: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
-  gameover: {fileID: 0}
+  gameover: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
 --- !u!1 &929292991
 GameObject:
   m_ObjectHideFlags: 0
