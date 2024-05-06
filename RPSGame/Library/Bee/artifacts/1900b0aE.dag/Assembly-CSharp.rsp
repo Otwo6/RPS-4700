@@ -379,6 +379,7 @@
 "Assets/Scripts/ProjectileScript.cs"
 "Assets/Scripts/StoneTrooperRotationScript.cs"
 "Assets/Scripts/SwingingObstacle.cs"
+"Assets/Scripts/SwingingObstacleCollisionScript.cs"
 "Assets/Scripts/TargetMover.cs"
 "Assets/Scripts/TargetScript.cs"
 "Assets/Scripts/TriggerSpawner.cs"
