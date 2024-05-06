@@ -2531,6 +2531,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6572586051515893320, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: m_Intensity
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8002399566831818422, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: m_Name
       value: PrefabMarket
@@ -3356,7 +3360,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

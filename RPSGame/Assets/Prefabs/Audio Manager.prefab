@@ -41,7 +41,7 @@ AudioSource:
   m_GameObject: {fileID: 1447158736478062967}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6922060340996033482, guid: f5a8a89da1041ab469032e659847e808, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -176,24 +176,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 7387688883929878835}
   SFXSource: {fileID: 4524946413729503274}
-  background: {fileID: 8300000, guid: 731ca80677a2e5e46a9db32086084e72, type: 3}
-  footsteps: {fileID: 8300000, guid: 949fbe62ad769a7489c033a8460ec3e3, type: 3}
-  jumping: {fileID: 8300000, guid: 08644aee55933714593d327fb724dafe, type: 3}
-  landing: {fileID: 0}
-  Scissorattack: {fileID: 0}
-  Paperattack: {fileID: 0}
-  Rockattack: {fileID: 0}
-  enemyhit: {fileID: 8300000, guid: 105471b59b275d74492115f7744c396c, type: 3}
-  playerdeath: {fileID: 0}
-  AttackCollision: {fileID: 0}
-  BoulderBlasterShoot: {fileID: 0}
-  BoulderBlasterhit: {fileID: 0}
-  playerrespawn: {fileID: 0}
-  rocksound: {fileID: 0}
-  scissorsound: {fileID: 0}
-  paperplanesound: {fileID: 0}
-  Attack: {fileID: 0}
-  equip: {fileID: 0}
+  background: {fileID: 8300000, guid: 7396db37db4b6e54485067de0e62a479, type: 3}
+  footsteps: {fileID: 8300000, guid: 76c8dba93fed2e742a97c278b5332af5, type: 3}
+  jumping: {fileID: 8300000, guid: 107eef3e472769b45906beb6085a5454, type: 3}
+  landing: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
+  Scissorattack: {fileID: 8300000, guid: 987dae5145ba53e429d9b91e3764d8ca, type: 3}
+  Paperattack: {fileID: 8300000, guid: 2278e1d50e01e3049aa53f72aaa12c86, type: 3}
+  Rockattack: {fileID: 8300000, guid: 565223c937b44d14a9ee21ea432d5497, type: 3}
+  enemyhit: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
+  death: {fileID: 8300000, guid: 272352f581588d54ab7cef5c32deae8a, type: 3}
+  BoulderBlasterShoot: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
+  Destroyed: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
+  equip: {fileID: 8300000, guid: 454d206d1f65f6b4286ea752602fffb4, type: 3}
+  respawn: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
+  testmap: {fileID: 0}
+  quit: {fileID: 0}
+  OptionMenu: {fileID: 0}
 --- !u!1 &9197183001446277329
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +233,7 @@ AudioSource:
   m_GameObject: {fileID: 9197183001446277329}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4675195969923304462, guid: f5a8a89da1041ab469032e659847e808, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
