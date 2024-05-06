@@ -9,6 +9,7 @@ public class PlayerHealthScript : MonoBehaviour
     private AudioManager audioManager;
     public TMP_Text UIText;
     private bool canLoseHealth = true;
+    public GameObject deathScreen;
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class PlayerHealthScript : MonoBehaviour
 
                 // Play death sound effect
                 audioManager.PlaySFX(audioManager.death);
+                deathScreen.SetActive(true);
             }
             else
             {
