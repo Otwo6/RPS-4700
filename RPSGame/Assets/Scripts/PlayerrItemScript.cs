@@ -46,7 +46,7 @@ public class PlayerrItemScript : MonoBehaviour
         }
 
         // Cycle through items
-        if (Input.GetButtonDown("NextItem"))
+        /*if (Input.GetButtonDown("NextItem"))
         {
             if (currentItem == 2)
             {
@@ -57,7 +57,7 @@ public class PlayerrItemScript : MonoBehaviour
                 currentItem++;
             }
             audioManager.PlaySFX(audioManager.equip); // Play equip sound
-        }
+        }*/ // doesnt work bc you randomly press on accident too much
 
         // Attack
         if (Input.GetButtonDown("Attack") && canAttack)

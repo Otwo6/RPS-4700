@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void Play() {
-        SceneManager.LoadScene("PaperTestMap");
+        SceneManager.LoadScene("ScissorsLevel");
     }
 
     public void Quit() {
