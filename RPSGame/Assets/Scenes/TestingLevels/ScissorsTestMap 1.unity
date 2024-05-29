@@ -1986,6 +1986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  UIText: {fileID: 0}
+  deathScreen: {fileID: 0}
 --- !u!1 &769164166
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,6 +4520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: Destroyed
       value: 
       objectReference: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
@@ -4548,7 +4554,7 @@ PrefabInstance:
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: BoulderBlasterShoot
       value: 
-      objectReference: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+      objectReference: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
     - target: {fileID: 4524946413729503274, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 

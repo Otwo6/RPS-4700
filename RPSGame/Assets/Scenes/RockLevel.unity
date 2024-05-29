@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1830,6 +1830,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: landing
+      value: 
+      objectReference: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
     - target: {fileID: 8002399566831818422, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: m_Name
       value: PrefabMarket
@@ -5606,7 +5614,7 @@ PrefabInstance:
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: BoulderBlasterShoot
       value: 
-      objectReference: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+      objectReference: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
     - target: {fileID: 7833870840301203641, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.983597

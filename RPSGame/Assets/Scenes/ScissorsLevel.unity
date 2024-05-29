@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2637,6 +2637,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: landing
+      value: 
+      objectReference: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: footsteps
+      value: 
+      objectReference: {fileID: 8300000, guid: 76c8dba93fed2e742a97c278b5332af5, type: 3}
     - target: {fileID: 6572586051515893320, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: m_Intensity
       value: 0.2
@@ -5036,13 +5048,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: equip
+      value: 
+      objectReference: {fileID: 8300000, guid: e0a31073d428fd445ac9ed1f4a6096e6, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: jumping
       value: 
       objectReference: {fileID: 8300000, guid: 107eef3e472769b45906beb6085a5454, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: landing
       value: 
-      objectReference: {fileID: 8300000, guid: 34b40a1ae6b56b645a9fe0149d03ef42, type: 3}
+      objectReference: {fileID: 8300000, guid: c01ab177b7819db44bd2c4a6654f574f, type: 3}
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: respawn
       value: 
@@ -5050,7 +5066,11 @@ PrefabInstance:
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: enemyhit
       value: 
-      objectReference: {fileID: 8300000, guid: 105471b59b275d74492115f7744c396c, type: 3}
+      objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
+    - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
     - target: {fileID: 7833870840301203641, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.095499
@@ -7530,7 +7550,7 @@ PrefabInstance:
     - target: {fileID: 4208477275251756527, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: BoulderBlasterShoot
       value: 
-      objectReference: {fileID: 8300000, guid: b75be36099ec41e4eb5aaa48f84071dd, type: 3}
+      objectReference: {fileID: 8300000, guid: d327603307f69344593dbd24cd7964cc, type: 3}
     - target: {fileID: 7833870840301203641, guid: bcd2eba0e1a144140a9985220c01a5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.983597

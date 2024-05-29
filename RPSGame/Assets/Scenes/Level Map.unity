@@ -947,6 +947,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: ffd6473177272d14aadc519e9d27bccb, type: 3}
     - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2c733f8a81d91448586c5068dc6aef, type: 3}
+    - target: {fileID: 1021583976628504563, guid: 32bddbe25fa3f8d43bd9d5945da83f02, type: 3}
       propertyPath: Destroyed
       value: 
       objectReference: {fileID: 8300000, guid: f074255a241acef4787d2072a1c7eca2, type: 3}
